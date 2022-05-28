@@ -9,19 +9,19 @@
   ┣━ src/
   ┃  ┃
   ┃  ┣━ conponents/
-  ┃  ┃    ┃
-  ┃  ┃    ┣━ ui/
-  ┃  ┃    ┃  ┣━ Example1.ui.jsx
-  ┃  ┃    ┃  ┣━ Example1.ui.css
-  ┃  ┃    ┃  ┃
-  ┃  ┃    ┃  ┣━ Example2.ui.jsx
-  ┃  ┃    ┃  ┣━ Example2.ui.css
-  ┃  ┃    ┃  ┃
-  ┃  ┃    ┃  ┗━ index.js
-  ┃  ┃    ┃
-  ┃  ┃    ┗━ Example1/
-  ┃  ┃        ┣━ Example1.component.jsx
-  ┃  ┃        ┗━ Example1.component.css
+  ┃  ┃  ┃
+  ┃  ┃  ┣━ ui/
+  ┃  ┃  ┃  ┣━ Example1.ui.jsx
+  ┃  ┃  ┃  ┣━ Example1.ui.css
+  ┃  ┃  ┃  ┃
+  ┃  ┃  ┃  ┣━ Example2.ui.jsx
+  ┃  ┃  ┃  ┣━ Example2.ui.css
+  ┃  ┃  ┃  ┃
+  ┃  ┃  ┃  ┗━ index.js
+  ┃  ┃  ┃
+  ┃  ┃  ┗━ Example1/
+  ┃  ┃     ┣━ Example1.component.jsx
+  ┃  ┃     ┗━ Example1.component.css
   ┃  ┃
   ┃  ┣━ layout
   ┃  ┃  ┣━ Layout.jsx
