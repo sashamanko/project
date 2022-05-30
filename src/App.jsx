@@ -1,7 +1,7 @@
 // CSS | My
 // __________________________________________________
 
-import './styles/App.css'
+import './styles/App.scss'
 
 const App = () => {
   return (
