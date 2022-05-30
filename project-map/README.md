@@ -1,3 +1,27 @@
+# README Карта
+
+- **[README Карта](#readme-карта)**
+- **[В проекте используем](#в-проекте-используется)**
+- **[Cтруктура файлов](#cтруктура-файлов)**
+
+# В проекте используем
+- ### Технологии
+  - **[React](https://ru.reactjs.org/)**
+  - **[SCSS](https://sass-lang.com/)**
+- ### Расширения - VS Code
+  - **[ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)**
+  - **[Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)**
+- ### ESLint config
+  - **Точка с запятой: желательно**
+  - **Размер tab: 2**
+  - **Подсветка неиспользуемых переменных**
+  - **npm run lint:fix - исправит всё выше написанное**
+- ### NPM Пакеты
+  - **react: 18.1.0**
+  - **remixicon-react: 1.0.0**
+  - **sass: 1.52.1**
+  - **wrapped-in-localstorage: 1.0.61**
+
 # Cтруктура файлов
 
 ```
@@ -37,6 +61,10 @@
   ┃  ┃  ┃
   ┃  ┃  ┗━ index.js
   ┃  ┃
+  ┃  ┣━ scss/
+  ┃  ┃  ┣━ _Variables.scss
+  ┃  ┃  ┗━ ...scss
+  ┃  ┃
   ┃  ┣━ styles/
   ┃  ┃  ┣━ global.scss
   ┃  ┃  ┣━ index.scss
@@ -45,6 +73,7 @@
   ┃  ┣━ App.jsx
   ┃  ┗━ index.js
   ┃
+  ┣━ .eslintrc
   ┣━ .gitignore
   ┣━ LICENSE
   ┣━ package-loock.json

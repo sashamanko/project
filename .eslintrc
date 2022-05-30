@@ -1,0 +1,14 @@
+{
+  "rules": {
+    "no-unused-vars": "warn",
+    "prefer-const": "error",
+    "indent": ["warn", 2],
+    "semi": ["warn", "always"]
+  },
+
+
+  "extends": [
+    "react-app",
+    "react-app/jest"
+  ]
+}

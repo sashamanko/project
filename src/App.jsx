@@ -4,6 +4,8 @@
 import './styles/App.scss'
 
 const App = () => {
+  const i = 1
+
   return (
     <>
     
