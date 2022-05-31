@@ -1,10 +1,9 @@
 // CSS | My
 // __________________________________________________
 
-import './styles/App.scss'
+import './styles/App.scss';
 
 const App = () => {
-  const i = 1
 
   return (
     <>

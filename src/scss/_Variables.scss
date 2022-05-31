@@ -1,9 +1,15 @@
 /* Variables
 __________________________________________________ */
-
-/**
-  * !
-  * ?
-  * //TODO: create file
-  * TODO: make style 
+  
+/** Prompt
+  * ?━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  * ? Create variable     | $name: value;
+  * ? Use variable        | background: $name;                   | background: value;
+  * ?━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  * ? Create list         | $name: ( value1, value2, value3 );
+  * ? Use list            | background: nth( $name, 1 );         | background: value1;
+  * ?━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  * ? Create map(Objekt)  | $name: ( key1: value3, "key2": "value3", 'key3': 'value3' );
+  * ? Use map(Objekt)     | background: map-get( $name, key3 );  | background: 'value3';
+  * ?━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  **/
