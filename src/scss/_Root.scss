@@ -1,6 +1,16 @@
+@import './_Variables';
+
 /* Root
 __________________________________________________ */
 
 :root {
-  
+  @each $key, $value in $globalRoot {
+  --#{$key}: #{$value};
+  }
+}
+
+:root[data-theme="white"] {
+  @each $key, $value in $whiteTheme {
+  --#{$key}: #{$value};
+  }
 }

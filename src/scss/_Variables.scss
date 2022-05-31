@@ -1,17 +1,48 @@
-/* Variables
-__________________________________________________ */
+// Variables
+//__________________________________________________
   
-/** Prompt
-  * ?━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  * ? Create variable     | $name: value;
-  * ? Use variable        | background: $name;                   | background: value;
-  * ?━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  * ? Create list         | $name: ( value1, value2, value3 );
-  * ? Use list            | background: nth( $name, 1 );         | background: value1;
-  * ?━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  * ? Create map(Objekt)  | $name: ( key1: value3, "key2": "value3", 'key3': 'value3' );
-  * ? Use map(Objekt)     | background: map-get( $name, key3 );  | background: 'value3';
-  * ?━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
- **/
+// Prompt
+// ?━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// ? Create variable     | $name: value;
+// ? Use variable        | background: $name;                   | background: value;
+// ?━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// ? Create list         | $name: ( value1, value2, value3 );
+// ? Use list            | background: nth( $name, 1 );         | background: value1;
+// ?━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// ? Create map(Objekt)  | $name: ( key1: value3, "key2": "value3", 'key3': 'value3' );
+// ? Use map(Objekt)     | background: map-get( $name, key3 );  | background: 'value3';
+// ?━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+//
 
-$name: value;
+$globalRoot: (
+  // Font
+  "font-size": 18px,
+);
+
+$whiteTheme: (
+  // Main
+  'main':       #4F11BA,
+
+  // Backgroun
+  'bg-body':    #D1D1D1,
+  'bg-block':   #FFFFFF,
+  
+  // Font
+  'font-color':  #212121,
+  'font-white ': #FFFFFF,
+);
+
+$darkTheme: (
+  
+);
+
+$typography: (
+  'desctop': (
+    'h1': 2.555rem,
+    'h2': 2.111rem,
+    'h3': 1.666rem,
+    'h4': 1.333rem,
+    'h5': 1.111rem,
+    'h6': 1rem,
+  ),
+)

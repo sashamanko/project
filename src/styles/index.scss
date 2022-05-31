@@ -1,3 +1,5 @@
+@import '../scss/_Root';
+
 *, ::after, ::before {
   margin: 0;
   padding: 0;
@@ -7,9 +9,6 @@
 
 html {
   font-size: 18px;
-
-
-  body {
-    background: white;
-  }
 }
+
+@import '../scss/_Typography';

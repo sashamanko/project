@@ -1,0 +1,10 @@
+@import './_Variables';
+
+/* Typography
+__________________________________________________ */
+
+@each $key, $value in map-get($typography, 'desctop') {
+  #{$key} {
+    font-size: $value;
+  }
+}

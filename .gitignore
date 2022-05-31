@@ -1,3 +1,7 @@
+# CSS , css.map
+/src/*/*.css
+/src/*/*.css.map
+
 # Logs
 logs
 *.log
