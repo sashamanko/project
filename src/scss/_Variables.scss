@@ -1,57 +1,74 @@
 // Variables
-//__________________________________________________
+// __________________________________________________
   
-/** Prompt
-  * ?━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  * ? Create variable     | $name: value;
-  * ? Use variable        | background: $name;                   | background: value;
-  * ?━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  * ? Create list         | $name: ( value1, value2, value3 );
-  * ? Use list            | background: nth( $name, 1 );         | background: value1;
-  * ?━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  * ? Create map(Objekt)  | $name: ( key1: value3, "key2": "value3", 'key3': 'value3' );
-  * ? Use map(Objekt)     | background: map-get( $name, key3 );  | background: 'value3';
-  * ?━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
- **/
+// Prompt
+// ?━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// ? Create variable     | $name: value;
+// ? Use variable        | background: $name;                   | background: value;
+// ?━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// ? Create list         | $name: ( value1, value2, value3 );
+// ? Use list            | background: nth( $name, 1 );         | background: value1;
+// ?━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// ? Create map(Objekt)  | $name: ( key1: value3, "key2": "value3", 'key3': 'value3' );
+// ? Use map(Objekt)     | background: map-get( $name, key3 );  | background: 'value3';
+// ?━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+//
 
-$globalRoot: (
-  // Font
-  "font-size": 18px,
+$main: #4F11BA;
+$main-2: #6129C1;
+
+$root: (
+  // :root {}
+  // __________________________________________________
+  'global': (
+    // Font
+    "font-size": 18px,
+  ),
+  // :root theme
+  // __________________________________________________
+  'theme': (
+
+    // :root[data-theme="white"] {}
+    // __________________________________________________
+    'white': (
+        // Backgroun
+        'bg-body':    #D1D1D1,
+        'bg-block':   #FFFFFF,
+        
+        // Font
+        'font-color':  #212121,
+        'font-white ': #FFFFFF,
+
+        // Button | BG
+        'button-bg-defaut': #{$main},
+
+        'button-bg-hfac': #{$main-2},
+
+        // 'button-bg-hover': #6129C1,
+        // 'button-bg-focused': #6129C1,
+        // 'button-bg-active': #6129C1,
+        // 'button-bg-click': #6129C1,
+        
+        'button-bg-disabled': #625775,
+    ),
+
+    // :root[data-theme="white"] {}
+    // __________________________________________________
+    'dark': (
+      // Main
+      'main':       #A26AF6,
+
+      // Backgroun
+      'bg-body':    #1B1B1B,
+      'bg-block':   #252525,
+      
+      // Font
+      'font-color':  #BABABA,
+      'font-white ': #FFFFFF,
+    ),
+  )
 );
 
-$whiteTheme: (
-  // Main
-  'main':       #4F11BA,
-
-  // Backgroun
-  'bg-body':    #D1D1D1,
-  'bg-block':   #FFFFFF,
-  
-  // Font
-  'font-color':  #212121,
-  'font-white ': #FFFFFF,
-
-  // Button | BG
-  'button-bg-defaut': #4F11BA,
-  'button-bg-hover': #6129C1,
-  'button-bg-focused': #6129C1,
-  'button-bg-active': #6129C1,
-  'button-bg-disabled': #625775,
-  'button-bg-click': #6129C1,
-);
-
-$darkTheme: (
-  // Main
-  'main':       #A26AF6,
-
-  // Backgroun
-  'bg-body':    #1B1B1B,
-  'bg-block':   #252525,
-  
-  // Font
-  'font-color':  #BABABA,
-  'font-white ': #FFFFFF,
-);
 
 $typography: (
   'desctop': (

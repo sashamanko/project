@@ -1,3 +1,6 @@
+@import '../scss/_Variables';
+
+
 @import '../scss/_Root';
 
 *, ::after, ::before {
@@ -12,3 +15,4 @@ html {
 }
 
 @import '../scss/_Typography';
+@import '../scss/_Utilities';

@@ -1,16 +1,24 @@
-@import './_Variables';
-
 /* Root
 __________________________________________________ */
 
-:root {
-  @each $key, $value in $globalRoot {
-  --#{$key}: #{$value};
+@each $property, $map in $root {
+  // Create global :root
+  @if ($property == 'global') {
+    :root {
+      @each $k, $v in $map {
+        --#{$k}: #{$v};
+      }
+    }
   }
-}
 
-:root[data-theme="white"] {
-  @each $key, $value in $whiteTheme {
-  --#{$key}: #{$value};
+  // Create :root[data-theme="white, dark"]
+  @else if ($property == 'theme') {
+    @each $theme, $themeMap in $map {
+      :root[data-theme="#{$theme}"] {
+        @each $k, $v in $themeMap {
+          --#{$k}: #{$v};
+        }
+      }
+    }
   }
 }
