@@ -30,10 +30,27 @@ $whiteTheme: (
   // Font
   'font-color':  #212121,
   'font-white ': #FFFFFF,
+
+  // Button | BG
+  'button-bg-defaut': #4F11BA,
+  'button-bg-hover': #6129C1,
+  'button-bg-focused': #6129C1,
+  'button-bg-active': #6129C1,
+  'button-bg-disabled': #625775,
+  'button-bg-click': #6129C1,
 );
 
 $darkTheme: (
+  // Main
+  'main':       #A26AF6,
+
+  // Backgroun
+  'bg-body':    #1B1B1B,
+  'bg-block':   #252525,
   
+  // Font
+  'font-color':  #BABABA,
+  'font-white ': #FFFFFF,
 );
 
 $typography: (
