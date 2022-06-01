@@ -1,6 +1,7 @@
 /* Root
 __________________________________________________ */
 
+
 @each $property, $map in $root {
   // Create global :root
   @if ($property == 'global') {

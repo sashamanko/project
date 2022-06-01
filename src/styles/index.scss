@@ -1,7 +1,10 @@
-@import '../scss/_Variables';
+@import '../scss/Functions';
+@import '../scss/Variables';
+@import '../scss/Breakpoints';
+@import '../scss/Mixins';
 
 
-@import '../scss/_Root';
+@import '../scss/Root';
 
 *, ::after, ::before {
   margin: 0;
@@ -14,5 +17,6 @@ html {
   font-size: 18px;
 }
 
-@import '../scss/_Typography';
-@import '../scss/_Utilities';
+@import '../scss/Typography';
+@import '../scss/Utilities';
+@import '../scss/MediaQueries';

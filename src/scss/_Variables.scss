@@ -1,6 +1,6 @@
 // Variables
 // __________________________________________________
-  
+
 // Prompt
 // ?━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 // ? Create variable     | $name: value;
@@ -19,80 +19,76 @@ $main-2: #6129C1;
 
 $root: (
   // :root {}
-  // __________________________________________________
-  'global': (
+  global: (
     // Font
-    "font-size": 18px,
+    font-size: breackpoint-get(font-size),
   ),
   // :root theme
-  // __________________________________________________
-  'theme': (
+  theme: (
 
     // :root[data-theme="white"] {}
-    // __________________________________________________
-    'white': (
+    white: (
         // Backgroun
-        'bg-body':    #D1D1D1,
-        'bg-block':   #FFFFFF,
+        bg-body:    #D1D1D1,
+        bg-block:   #FFFFFF,
         
         // Font
-        'font-color':  #212121,
-        'font-white ': #FFFFFF,
+        font-color:  #212121,
+        font-white: #FFFFFF,
 
         // Button | BG
-        'button-bg-defaut': #{$main},
+        button-bg-defaut: #{$main},
 
-        'button-bg-hfac': #{$main-2},
+        button-bg-hfac: #{$main-2},
 
         // 'button-bg-hover': #6129C1,
         // 'button-bg-focused': #6129C1,
         // 'button-bg-active': #6129C1,
         // 'button-bg-click': #6129C1,
         
-        'button-bg-disabled': #625775,
+        button-bg-disabled: #625775,
     ),
 
     // :root[data-theme="white"] {}
-    // __________________________________________________
-    'dark': (
+    dark: (
       // Main
-      'main':       #A26AF6,
+      main:       #A26AF6,
 
       // Backgroun
-      'bg-body':    #1B1B1B,
-      'bg-block':   #252525,
+      bg-body:    #1B1B1B,
+      bg-block:   #252525,
       
       // Font
-      'font-color':  #BABABA,
-      'font-white ': #FFFFFF,
+      font-color:  #BABABA,
+      font-white: #FFFFFF,
     ),
   )
 );
 
 
 $typography: (
-  'desctop': (
-    'h1': 2.555rem,
-    'h2': 2.111rem,
-    'h3': 1.666rem,
-    'h4': 1.333rem,
-    'h5': 1.111rem,
-    'h6': 1rem,
+  desctop: (
+    h1: 2.555rem,
+    h2: 2.111rem,
+    h3: 1.666rem,
+    h4: 1.333rem,
+    h5: 1.111rem,
+    h6: 1rem,
   ),
-  'tablet': (
-    'h1': 2.111rem,
-    'h2': 1.666rem,
-    'h3': 1.333rem,
-    'h4': 1.111rem,
-    'h5': 1rem,
-    'h6': .888rem,
+  tablet: (
+    h1: 2.111rem,
+    h2: 1.666rem,
+    h3: 1.333rem,
+    h4: 1.111rem,
+    h5: 1rem,
+    h6: .888rem,
   ),
-  'mobile': (
-    'h1': 1.444rem,
-    'h2': 1.222rem,
-    'h3': 1.111rem,
-    'h4': 1rem,
-    'h5': .888rem,
-    'h6': .777rem,
+  mobile: (
+    h1: 1.444rem,
+    h2: 1.222rem,
+    h3: 1.111rem,
+    h4: 1rem,
+    h5: .888rem,
+    h6: .777rem,
   ),
-)
+);

@@ -1,0 +1,35 @@
+// Mixins
+// __________________________________________________
+
+
+// Media queries 
+// __________________________________________________
+@mixin media-xl {
+  @media screen and (max-width: brackpoint-get(md)) {
+    @content;
+  }
+}
+
+@mixin media-ld {
+  @media screen and (max-width: brackpoint-get(md)) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media screen and (max-width: brackpoint-get(md)) {
+    @content;
+  }
+}
+
+@mixin media-sm {
+  @media screen and (max-width: brackpoint-get(sm)) {
+    @content;
+  }
+}
+
+@mixin media-new-brackpoint ($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
