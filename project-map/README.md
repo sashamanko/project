@@ -11,6 +11,8 @@
 - ### Расширения - VS Code
   - **[ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)**
   - **[Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)**
+- ### Снипиты - VS Code
+  - **[Wrapped in | React snippets](https://marketplace.visualstudio.com/items?itemName=wrapped-in.wrapped-in-react-snippets)**
 - ### ESLint config
   - **Точка с запятой: желательно**
   - **Размер tab: 2**
