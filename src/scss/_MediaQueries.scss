@@ -16,6 +16,8 @@
 // 768px
 // __________________________________________________
 @include media-md {
+  // Typography
+  // __________________________________________________
   @each $key, $value in map-get($typography, 'tablet') {
     #{$key} {
       font-size: $value;
@@ -26,6 +28,8 @@
 // 320px
 // __________________________________________________
 @include media-sm {
+  // Typography
+  // __________________________________________________
   @each $key, $value in map-get($typography, 'mobile') {
     #{$key} {
       font-size: $value;

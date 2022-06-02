@@ -9,7 +9,7 @@
                                     $sizes-breakpoints,
                                     $container-breakpoints,
                                   ) {
-    @if ($brackpoint == $key) {
+    @if ($breackpoint == $key) {
       @return $value;
     }
   }
