@@ -74,6 +74,7 @@ $typography: (
     h4: 1.333rem,
     h5: 1.111rem,
     h6: 1rem,
+    p:  1rem,
   ),
   tablet: (
     h1: 2.111rem,
@@ -82,6 +83,7 @@ $typography: (
     h4: 1.111rem,
     h5: 1rem,
     h6: .888rem,
+    p:  .888rem,
   ),
   mobile: (
     h1: 1.444rem,
@@ -90,5 +92,6 @@ $typography: (
     h4: 1rem,
     h5: .888rem,
     h6: .777rem,
+    p:  .777rem
   ),
 );

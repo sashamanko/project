@@ -1,3 +1,128 @@
-// Utilities
-// __________________________________________________
+/* Utilities
+__________________________________________________ */
 
+$utilities: (
+  margin: (
+    prefix: 'm',
+    values: (
+      '0': 0,
+      '1': breackpoint-get(margin),
+      '2': breackpoint-get(margin) / 2,
+      '3': breackpoint-get(margin) / 3,
+      '4': breackpoint-get(margin) / 4,
+      '5': breackpoint-get(margin) / 6,
+    )
+  ),
+  margin-top: (
+    prefix: 'mt',
+    values: (
+      '0': 0,
+      '1': breackpoint-get(margin),
+      '2': breackpoint-get(margin) / 2,
+      '3': breackpoint-get(margin) / 3,
+      '4': breackpoint-get(margin) / 4,
+      '5': breackpoint-get(margin) / 6,
+    )
+  ),
+  margin-right: (
+    prefix: 'mr',
+    values: (
+      '0': 0,
+      '1': breackpoint-get(margin),
+      '2': breackpoint-get(margin) / 2,
+      '3': breackpoint-get(margin) / 3,
+      '4': breackpoint-get(margin) / 4,
+      '5': breackpoint-get(margin) / 6,
+    )
+  ),
+  margin-bottom: (
+    prefix: 'mb',
+    values: (
+      '0': 0,
+      '1': breackpoint-get(margin),
+      '2': breackpoint-get(margin) / 2,
+      '3': breackpoint-get(margin) / 3,
+      '4': breackpoint-get(margin) / 4,
+      '5': breackpoint-get(margin) / 6,
+    )
+  ),
+  margin-left: (
+    prefix: 'ml',
+    values: (
+      '0': 0,
+      '1': breackpoint-get(margin),
+      '2': breackpoint-get(margin) / 2,
+      '3': breackpoint-get(margin) / 3,
+      '4': breackpoint-get(margin) / 4,
+      '5': breackpoint-get(margin) / 6,
+    )
+  ),
+  padding: (
+    prefix: 'p',
+    values: (
+      '0': 0,
+      '1': breackpoint-get(padding),
+      '2': breackpoint-get(padding) / 2,
+      '3': breackpoint-get(padding) / 3,
+      '4': breackpoint-get(padding) / 4,
+      '5': breackpoint-get(padding) / 6,
+    )
+  )
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@each $property, $map in $utilities {
+  $prefix: map-get($map, 'prefix');
+  $values: map-get($map, 'values');
+
+  @each $k, $v in $values {
+
+    @if ($k == 'default') {
+      .#{$prefix} {
+        #{$property}: #{$v};
+      }  
+    } @else {
+      .#{$prefix}-#{$k} {
+        #{$property}: #{$v};
+      }
+    }
+  }
+}
