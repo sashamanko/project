@@ -1,0 +1,30 @@
+/* Buttons
+__________________________________________________ */
+.Btn {
+  /* Button | Primary
+  __________________________________________________ */
+  /* Button | Secondary
+  __________________________________________________ */
+}
+
+.Btn .Primary {
+  padding: 6px 12px;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 20px;
+  background: #4F11BA;
+  -webkit-box-shadow: 0px 4px 5px 1px #403c4335;
+          box-shadow: 0px 4px 5px 1px #403c4335;
+  border-radius: 30px;
+}
+
+.Btn .Secondary {
+  padding: 6px 12px;
+  color: #212121;
+  font-weight: 600;
+  font-size: 20px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 5px 1px #403c4335;
+          box-shadow: 0px 4px 5px 1px #403c4335;
+  border-radius: 30px;
+}

@@ -1,0 +1,28 @@
+// Buttons
+// __________________________________________________
+
+.Btn {
+  padding: 6px 12px;
+  font-weight: 600;
+  font-size: 20px;
+  box-shadow: 0px 4px 5px 1px #403c4335;
+  border-radius: 30px;
+  cursor: pointer;
+ 
+  // Button | Primary
+  // __________________________________________________
+  
+  &.Primary {
+    color: #FFFFFF;
+    background: #4F11BA;
+  };
+  
+  // Button | Secondary
+  // __________________________________________________
+  
+  &.Secondary {
+    color: #212121;
+    background: #FFFFFF;
+  };
+
+};

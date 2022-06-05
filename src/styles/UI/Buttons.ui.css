@@ -1,0 +1,20 @@
+/* Buttons
+__________________________________________________ */
+.Btn {
+  padding: 6px 12px;
+  font-weight: 600;
+  font-size: 20px;
+  -webkit-box-shadow: 0px 4px 5px 1px #403c4335;
+          box-shadow: 0px 4px 5px 1px #403c4335;
+  border-radius: 30px;
+}
+
+.Btn.Primary {
+  color: #FFFFFF;
+  background: #4F11BA;
+}
+
+.Btn.Secondary {
+  color: #212121;
+  background: #FFFFFF;
+}
