@@ -1,6 +1,6 @@
 # CSS , css.map
-/src/*/*.css
-/src/*/*.map
+/src/**/*.css
+/src/**/*.map
 
 # Logs
 logs
