@@ -14,14 +14,17 @@
 // ?━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 //
 
-$main: #4F11BA;
-$main-2: #6129C1;
+$mainWhite: #4F11BA;
+$mainDark: #6129C1;
 
 $root: (
   // :root {}
   global: (
     // Font
+    margin: breackpoint-get(margin),
+    padding: breackpoint-get(padding),
     font-size: breackpoint-get(font-size),
+    transition: breackpoint-get(transition),
   ),
   // :root theme
   theme: (
@@ -29,30 +32,25 @@ $root: (
     // :root[data-theme="white"] {}
     white: (
         // Backgroun
-        bg-body:    #D1D1D1,
-        bg-block:   #FFFFFF,
+        bg-body:                    #D1D1D1,
+        bg-block:                   #FFFFFF,
         
         // Font
-        font-color:  #212121,
-        font-white: #FFFFFF,
+        font-color:                 #212121,
+        font-white:                 #FFFFFF,
 
         // Button | BG
-        button-bg-defaut: #{$main},
+        button-bg-defaut:             #{$mainWhite},
+        button-bg-hover:       lighten($mainWhite, 10%),
+        button-bg-focused:     lighten($mainWhite, 10%),
+        button-bg-active:      lighten($mainWhite, 10%),
+        button-bg-disabled:  #625775,
 
-        button-bg-hfac: #{$main-2},
-
-        // 'button-bg-hover': #6129C1,
-        // 'button-bg-focused': #6129C1,
-        // 'button-bg-active': #6129C1,
-        // 'button-bg-click': #6129C1,
         
-        button-bg-disabled: #625775,
     ),
 
     // :root[data-theme="dark"] {}
     dark: (
-      // Main
-      main:       #A26AF6,
 
       // Backgroun
       bg-body:    #1B1B1B,

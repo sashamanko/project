@@ -1,3 +1,5 @@
+// Imports | Module classes
+// __________________________________________________
 import classes from "./Buttons.ui.module.scss";
 
 const Buttons = ({ children, type, ...props }) => {
@@ -9,11 +11,12 @@ const Buttons = ({ children, type, ...props }) => {
     'Secondary': Secondary,
   };
 
-  Object.keys(typeList).forEach((elem => elem === type && classList.push(typeList[elem])));
+  // * Object.keys() - Трансформация обэкт в список с ключами обэкта
+  Object.keys(typeList).find(elem => elem === type && classList.push(typeList[elem]));
 
 
   return (
-    <button className={ classList.join(' ') } { ...props }>
+    <button className={ classList.join(' ') } { ...props } type="button">
       { children }
     </button>
   );

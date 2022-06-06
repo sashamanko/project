@@ -17,7 +17,7 @@ __________________________________________________ */
     @each $theme, $themeMap in $map {
       :root[data-theme="#{$theme}"] {
         @each $k, $v in $themeMap {
-          --#{$k}: #{$v};
+        --#{$k}: #{$v};
         }
       }
     }
