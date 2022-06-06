@@ -7,8 +7,8 @@ const Buttons = ({ children, type, ...props }) => {
   const { Btn, Primary, Secondary } = classes;
   const classList = [ Btn, ];
   const typeList = {
-    'Primary': Primary,
-    'Secondary': Secondary,
+    'primary': Primary,
+    'secondary': Secondary,
   };
 
   // * Object.keys() - Трансформация обэкт в список с ключами обэкта

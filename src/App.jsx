@@ -8,7 +8,7 @@ const App = () => {
   return (
     <>
       <div className="mt-1">
-        <Buttons type='Primary'>Button</Buttons>
+        <Buttons type='primary' disabled>Button</Buttons>
       </div>
     </>
   );

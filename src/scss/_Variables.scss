@@ -44,7 +44,9 @@ $root: (
         button-bg-hover:       lighten($mainWhite, 10%),
         button-bg-focused:     lighten($mainWhite, 10%),
         button-bg-active:      lighten($mainWhite, 10%),
-        button-bg-disabled:  #625775,
+        button-bg-disabled:  desaturate($mainWhite, 50%),
+        button-color-disabled:  darken(#ffffff, 50%),
+        // button-bg-disabled:  #625775,
 
         
     ),

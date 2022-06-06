@@ -1,8 +1,5 @@
 // Buttons
 // __________________________________________________
-@import '../../scss/Functions';
-@import '../../scss/Breakpoints';
-
 
 .Btn {
   padding: calc(var(--padding) / 2)  var(--padding);
@@ -33,6 +30,17 @@
     
     &:active {
       transform: scale(.95);
+    }
+    
+    &:disabled {
+      color: var(--button-color-disabled);
+      background: var(--button-bg-disabled);
+      border: none;
+      cursor: default;
+      
+      &:active {
+        transform: scale(1);
+      }
     }
     
   };
