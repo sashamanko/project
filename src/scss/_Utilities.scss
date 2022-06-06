@@ -3,7 +3,7 @@ __________________________________________________ */
 
 $utilities: (
   margin: (
-    prefix: 'm',
+    prefix: 'm-',
     values: (
       '0': 0,
       '1': breackpoint-get(margin),
@@ -14,7 +14,7 @@ $utilities: (
     )
   ),
   margin-top: (
-    prefix: 'mt',
+    prefix: 'mt-',
     values: (
       '0': 0,
       '1': breackpoint-get(margin),
@@ -22,10 +22,11 @@ $utilities: (
       '3': breackpoint-get(margin) / 3,
       '4': breackpoint-get(margin) / 4,
       '5': breackpoint-get(margin) / 6,
+      'auto': auto,
     )
   ),
   margin-right: (
-    prefix: 'mr',
+    prefix: 'mr-',
     values: (
       '0': 0,
       '1': breackpoint-get(margin),
@@ -33,10 +34,11 @@ $utilities: (
       '3': breackpoint-get(margin) / 3,
       '4': breackpoint-get(margin) / 4,
       '5': breackpoint-get(margin) / 6,
+      'auto': auto,
     )
   ),
   margin-bottom: (
-    prefix: 'mb',
+    prefix: 'mb-',
     values: (
       '0': 0,
       '1': breackpoint-get(margin),
@@ -44,10 +46,11 @@ $utilities: (
       '3': breackpoint-get(margin) / 3,
       '4': breackpoint-get(margin) / 4,
       '5': breackpoint-get(margin) / 6,
+      'auto': auto,
     )
   ),
   margin-left: (
-    prefix: 'ml',
+    prefix: 'ml-',
     values: (
       '0': 0,
       '1': breackpoint-get(margin),
@@ -55,10 +58,11 @@ $utilities: (
       '3': breackpoint-get(margin) / 3,
       '4': breackpoint-get(margin) / 4,
       '5': breackpoint-get(margin) / 6,
+      'auto': auto,
     )
   ),
   padding: (
-    prefix: 'p',
+    prefix: 'p-',
     values: (
       '0': 0,
       '1': breackpoint-get(padding),
@@ -67,10 +71,112 @@ $utilities: (
       '4': breackpoint-get(padding) / 4,
       '5': breackpoint-get(padding) / 6,
     )
-  )
+  ),
+  padding-top: (
+    prefix: 'pt-',
+    values: (
+      '0': 0,
+      '1': breackpoint-get(padding),
+      '2': breackpoint-get(padding) / 2,
+      '3': breackpoint-get(padding) / 3,
+      '4': breackpoint-get(padding) / 4,
+      '5': breackpoint-get(padding) / 6,
+      'auto': auto,
+    )
+  ),
+  padding-right: (
+    prefix: 'pr-',
+    values: (
+      '0': 0,
+      '1': breackpoint-get(padding),
+      '2': breackpoint-get(padding) / 2,
+      '3': breackpoint-get(padding) / 3,
+      '4': breackpoint-get(padding) / 4,
+      '5': breackpoint-get(padding) / 6,
+      'auto': auto,
+    )
+  ),
+  padding-bottom: (
+    prefix: 'pb-',
+    values: (
+      '0': 0,
+      '1': breackpoint-get(padding),
+      '2': breackpoint-get(padding) / 2,
+      '3': breackpoint-get(padding) / 3,
+      '4': breackpoint-get(padding) / 4,
+      '5': breackpoint-get(padding) / 6,
+      'auto': auto,
+    )
+  ),
+  padding-left: (
+    prefix: 'pl-',
+    values: (
+      '0': 0,
+      '1': breackpoint-get(padding),
+      '2': breackpoint-get(padding) / 2,
+      '3': breackpoint-get(padding) / 3,
+      '4': breackpoint-get(padding) / 4,
+      '5': breackpoint-get(padding) / 6,
+      'auto': auto,
+    )
+  ),
+  display: (
+    prefix: '',
+    values: (
+      'flex': flex,
+    )
+  ),
+  flex-direction: (
+    prefix: '',
+    values: (
+      "flex-col": column,
+      "flex-col-reverse": column-reverse,
+      "flex-row": row,
+      "flex-row-reverse": row-reverse,
+    )
+  ),
+  justify-content: (
+    prefix: '',
+    values: (
+      "justify-start": flex-start,
+      "justify-center": center,
+      "justify-end": flex-end,
+      "justify-between": space-between,
+      "justify-evenly": space-evenly,
+      "justify-around": space-around,
+    )
+  ),
+  align-items: (
+    prefix: '',
+    values: (
+      "item-start": flex-start,
+      "item-center": center,
+      "item-end": flex-end,
+      "item-baseline": baseline,
+      "item-stretch": stretch,
+    )
+  ),
+  flex-wrap: (
+    prefix: '',
+    values: (
+      "flex-wrap": wrap,
+      "flex-wrap-reverse": wrap-reverse,
+      "flex-nowrap": nowrap,
+    )
+  ),
+  list-style: (
+    prefix: 'ls-',
+    values: (
+      'none': none,
+    )
+  ),
+  background: (
+    prefix: 'bg-',
+    values: (
+      "block": var(--bg-block),
+    )
+  ),
 );
-
-
 
 
 
@@ -120,7 +226,7 @@ $utilities: (
         #{$property}: #{$v};
       }  
     } @else {
-      .#{$prefix}-#{$k} {
+      .#{$prefix}#{$k} {
         #{$property}: #{$v};
       }
     }

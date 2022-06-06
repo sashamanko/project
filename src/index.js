@@ -10,9 +10,12 @@ import './styles/index.scss';
 // Imports | App
 // __________________________________________________
 import App from './App';
+import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.createRoot(document.querySelector('#root')).render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );

@@ -25,6 +25,7 @@ $root: (
     padding: breackpoint-get(padding),
     font-size: breackpoint-get(font-size),
     transition: breackpoint-get(transition),
+    border-radius: breackpoint-get(border-radius),
   ),
   // :root theme
   theme: (
@@ -32,6 +33,7 @@ $root: (
     // :root[data-theme="white"] {}
     white: (
         // Backgroun
+        main:                       $mainWhite,
         bg-body:                    #D1D1D1,
         bg-block:                   #FFFFFF,
         
@@ -44,8 +46,8 @@ $root: (
         button-bg-hover:       lighten($mainWhite, 10%),
         button-bg-focused:     lighten($mainWhite, 10%),
         button-bg-active:      lighten($mainWhite, 10%),
-        button-bg-disabled:  desaturate($mainWhite, 50%),
-        button-color-disabled:  darken(#ffffff, 50%),
+        button-bg-disabled:    desaturate($mainWhite, 50%),
+        button-color-disabled: darken(#ffffff, 50%),
         // button-bg-disabled:  #625775,
 
         
@@ -55,12 +57,13 @@ $root: (
     dark: (
 
       // Backgroun
+      main:       $mainDark,
       bg-body:    #1B1B1B,
       bg-block:   #252525,
       
       // Font
       font-color:  #BABABA,
-      font-white: #FFFFFF,
+      font-white:  #FFFFFF,
     ),
   )
 );
