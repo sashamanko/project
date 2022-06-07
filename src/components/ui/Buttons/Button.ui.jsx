@@ -1,8 +1,8 @@
 // Imports | Module classes
 // __________________________________________________
-import classes from "./Buttons.ui.module.scss";
+import classes from "./Button.ui.module.scss";
 
-const Buttons = ({ children, type, ...props }) => {
+const Button = ({ children, type, ...props }) => {
 
   const { Btn, Primary, Secondary } = classes;
   const classList = [ Btn, ];
@@ -22,4 +22,4 @@ const Buttons = ({ children, type, ...props }) => {
   );
 };
 
-export default Buttons;
+export default Button;

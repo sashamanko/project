@@ -4,7 +4,7 @@
 // __________________________________________________
 
 
-@function breackpoint-get($breackpoint) {
+@function breakpoint-get($breackpoint) {
   @each $key, $value in map-merge(
                                     $sizes-breakpoints,
                                     $container-breakpoints,

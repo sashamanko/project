@@ -3,130 +3,194 @@ __________________________________________________ */
 
 $utilities: (
   margin: (
-    prefix: 'm-',
+    property: 'margin',
+    prefix: 'm',
     values: (
       '0': 0,
-      '1': breackpoint-get(margin),
-      '2': breackpoint-get(margin) / 2,
-      '3': breackpoint-get(margin) / 3,
-      '4': breackpoint-get(margin) / 4,
-      '5': breackpoint-get(margin) / 6,
+      '1': var(--margin),
+      '2': var(--margin) / 2,
+      '3': var(--margin) / 3,
+      '4': var(--margin) / 4,
+      '5': var(--margin) / 6,
     )
   ),
   margin-top: (
-    prefix: 'mt-',
+    property: 'margin-top',
+    prefix: 'mt',
     values: (
       '0': 0,
-      '1': breackpoint-get(margin),
-      '2': breackpoint-get(margin) / 2,
-      '3': breackpoint-get(margin) / 3,
-      '4': breackpoint-get(margin) / 4,
-      '5': breackpoint-get(margin) / 6,
+      '1': var(--margin),
+      '2': var(--margin) / 2,
+      '3': var(--margin) / 3,
+      '4': var(--margin) / 4,
+      '5': var(--margin) / 6,
       'auto': auto,
     )
   ),
   margin-right: (
-    prefix: 'mr-',
+    property: 'margin-right',
+    prefix: 'mr',
     values: (
       '0': 0,
-      '1': breackpoint-get(margin),
-      '2': breackpoint-get(margin) / 2,
-      '3': breackpoint-get(margin) / 3,
-      '4': breackpoint-get(margin) / 4,
-      '5': breackpoint-get(margin) / 6,
+      '1': var(--margin),
+      '2': var(--margin) / 2,
+      '3': var(--margin) / 3,
+      '4': var(--margin) / 4,
+      '5': var(--margin) / 6,
       'auto': auto,
     )
   ),
   margin-bottom: (
-    prefix: 'mb-',
+    property: 'margin-bottom',
+    prefix: 'mb',
     values: (
       '0': 0,
-      '1': breackpoint-get(margin),
-      '2': breackpoint-get(margin) / 2,
-      '3': breackpoint-get(margin) / 3,
-      '4': breackpoint-get(margin) / 4,
-      '5': breackpoint-get(margin) / 6,
+      '1': var(--margin),
+      '2': var(--margin) / 2,
+      '3': var(--margin) / 3,
+      '4': var(--margin) / 4,
+      '5': var(--margin) / 6,
       'auto': auto,
     )
   ),
   margin-left: (
-    prefix: 'ml-',
+    property: 'margin-left',
+    prefix: 'ml',
     values: (
       '0': 0,
-      '1': breackpoint-get(margin),
-      '2': breackpoint-get(margin) / 2,
-      '3': breackpoint-get(margin) / 3,
-      '4': breackpoint-get(margin) / 4,
-      '5': breackpoint-get(margin) / 6,
+      '1': var(--margin),
+      '2': var(--margin) / 2,
+      '3': var(--margin) / 3,
+      '4': var(--margin) / 4,
+      '5': var(--margin) / 6,
       'auto': auto,
     )
   ),
+  margin-y: (
+    property: ('margin-top', 'margin-bottom'),
+    prefix: 'my',
+    values: (
+      '0': (0, 0),
+      '1': (var(--margin), var(--margin)),
+      '2': (var(--margin) / 2, var(--margin) / 2),
+      '3': (var(--margin) / 3, var(--margin) / 3),
+      '4': (var(--margin) / 4, var(--margin) / 4),
+      '5': (var(--margin) / 6, var(--margin) / 6),
+      'auto': (auto, auto),
+    )
+  ),
+  margin-x: (
+    property: ('margin-right', 'margin-left'),
+    prefix: 'mx',
+    values: (
+      '0': (0, 0),
+      '1': (var(--margin), var(--margin)),
+      '2': (var(--margin) / 2, var(--margin) / 2),
+      '3': (var(--margin) / 3, var(--margin) / 3),
+      '4': (var(--margin) / 4, var(--margin) / 4),
+      '5': (var(--margin) / 6, var(--margin) / 6),
+      'auto': (auto, auto),
+    )
+  ),
   padding: (
-    prefix: 'p-',
+    property: 'padding',
+    prefix: 'p',
     values: (
       '0': 0,
-      '1': breackpoint-get(padding),
-      '2': breackpoint-get(padding) / 2,
-      '3': breackpoint-get(padding) / 3,
-      '4': breackpoint-get(padding) / 4,
-      '5': breackpoint-get(padding) / 6,
+      '1': var(--padding),
+      '2': var(--padding) / 2,
+      '3': var(--padding) / 3,
+      '4': var(--padding) / 4,
+      '5': var(--padding) / 6,
     )
   ),
   padding-top: (
-    prefix: 'pt-',
+    property: 'padding-top',
+    prefix: 'pt',
     values: (
       '0': 0,
-      '1': breackpoint-get(padding),
-      '2': breackpoint-get(padding) / 2,
-      '3': breackpoint-get(padding) / 3,
-      '4': breackpoint-get(padding) / 4,
-      '5': breackpoint-get(padding) / 6,
+      '1': var(--padding),
+      '2': var(--padding) / 2,
+      '3': var(--padding) / 3,
+      '4': var(--padding) / 4,
+      '5': var(--padding) / 6,
       'auto': auto,
     )
   ),
   padding-right: (
-    prefix: 'pr-',
+    property: 'padding-right',
+    prefix: 'pr',
     values: (
       '0': 0,
-      '1': breackpoint-get(padding),
-      '2': breackpoint-get(padding) / 2,
-      '3': breackpoint-get(padding) / 3,
-      '4': breackpoint-get(padding) / 4,
-      '5': breackpoint-get(padding) / 6,
+      '1': var(--padding),
+      '2': var(--padding) / 2,
+      '3': var(--padding) / 3,
+      '4': var(--padding) / 4,
+      '5': var(--padding) / 6,
       'auto': auto,
     )
   ),
   padding-bottom: (
-    prefix: 'pb-',
+    property: 'padding-bottom',
+    prefix: 'pb',
     values: (
       '0': 0,
-      '1': breackpoint-get(padding),
-      '2': breackpoint-get(padding) / 2,
-      '3': breackpoint-get(padding) / 3,
-      '4': breackpoint-get(padding) / 4,
-      '5': breackpoint-get(padding) / 6,
+      '1': var(--padding),
+      '2': var(--padding) / 2,
+      '3': var(--padding) / 3,
+      '4': var(--padding) / 4,
+      '5': var(--padding) / 6,
       'auto': auto,
     )
   ),
   padding-left: (
-    prefix: 'pl-',
+    property: 'padding-left',
+    prefix: 'pl',
     values: (
       '0': 0,
-      '1': breackpoint-get(padding),
-      '2': breackpoint-get(padding) / 2,
-      '3': breackpoint-get(padding) / 3,
-      '4': breackpoint-get(padding) / 4,
-      '5': breackpoint-get(padding) / 6,
+      '1': var(--padding),
+      '2': var(--padding) / 2,
+      '3': var(--padding) / 3,
+      '4': var(--padding) / 4,
+      '5': var(--padding) / 6,
       'auto': auto,
     )
   ),
+  padding-y: (
+    property: ('padding-top', 'padding-bottom'),
+    prefix: 'py',
+    values: (
+      '0': (0, 0),
+      '1': (var(--padding), var(--margin)),
+      '2': (var(--padding) / 2, var(--margin) / 2),
+      '3': (var(--padding) / 3, var(--margin) / 3),
+      '4': (var(--padding) / 4, var(--margin) / 4),
+      '5': (var(--padding) / 6, var(--margin) / 6),
+      'auto': (auto, auto),
+    )
+  ),
+  padding-x: (
+    property: ('padding-right', 'padding-left'),
+    prefix: 'px',
+    values: (
+      '0': (0, 0),
+      '1': (var(--padding), var(--margin)),
+      '2': (var(--padding) / 2, var(--margin) / 2),
+      '3': (var(--padding) / 3, var(--margin) / 3),
+      '4': (var(--padding) / 4, var(--margin) / 4),
+      '5': (var(--padding) / 6, var(--margin) / 6),
+      'auto': (auto, auto),
+    )
+  ),
   display: (
+    property: 'display',
     prefix: '',
     values: (
       'flex': flex,
     )
   ),
   flex-direction: (
+    property: 'flex-direction',
     prefix: '',
     values: (
       "flex-col": column,
@@ -136,6 +200,7 @@ $utilities: (
     )
   ),
   justify-content: (
+    property: 'justify-content',
     prefix: '',
     values: (
       "justify-start": flex-start,
@@ -147,16 +212,18 @@ $utilities: (
     )
   ),
   align-items: (
+    property: 'align-items',
     prefix: '',
     values: (
-      "item-start": flex-start,
-      "item-center": center,
-      "item-end": flex-end,
-      "item-baseline": baseline,
-      "item-stretch": stretch,
+      "align-start": flex-start,
+      "align-center": center,
+      "align-end": flex-end,
+      "align-baseline": baseline,
+      "align-stretch": stretch,
     )
   ),
   flex-wrap: (
+    property: 'flex-wrap',
     prefix: '',
     values: (
       "flex-wrap": wrap,
@@ -165,57 +232,34 @@ $utilities: (
     )
   ),
   list-style: (
-    prefix: 'ls-',
+    property: 'list-style',
+    prefix: 'ls',
     values: (
       'none': none,
     )
   ),
   background: (
-    prefix: 'bg-',
+    property: 'background',
+    prefix: 'bg',
     values: (
       "block": var(--bg-block),
     )
   ),
+  container: (
+    property: ('max-width', 'width', 'margin-right', 'margin-left', 'padding-right', 'padding-left'),
+    prefix: '',
+    values: (
+      'container': (breakpoint-get(xl), 100%, auto, auto, var(--padding), var(--padding))
+    )
+  )
 );
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@each $property, $map in $utilities {
+@each $none, $map in $utilities {
+  $property: map-get($map, 'property');
   $prefix: map-get($map, 'prefix');
   $values: map-get($map, 'values');
 
@@ -225,8 +269,28 @@ $utilities: (
       .#{$prefix} {
         #{$property}: #{$v};
       }  
+    } @else if (type-of($property) == 'list' and $prefix != '') {
+      $i: 1;
+      .#{$prefix}-#{$k} {
+        @each $var in $property {
+          #{$var}: #{nth($v, $i)};
+          $i: $i + 1;
+        }  
+      }
+    } @else if (type-of($property) == 'list' and $prefix == '') {
+      $i: 1;
+      .#{$k} {
+        @each $var in $property {
+          #{$var}: #{nth($v, $i)};
+          $i: $i + 1;
+        }  
+      }
+    } @else if ($prefix == '') {
+      .#{$k} {
+        #{$property}: #{$v};
+      }
     } @else {
-      .#{$prefix}#{$k} {
+      .#{$prefix}-#{$k} {
         #{$property}: #{$v};
       }
     }

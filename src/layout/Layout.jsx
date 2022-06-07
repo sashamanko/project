@@ -1,11 +1,20 @@
-import Header from "../components/Header/Header";
+// Imports | React router
+// __________________________________________________
 import { Outlet } from "react-router-dom";
-// import './Layout.css';
+
+// Imports | Components
+// __________________________________________________
+import { Header } from "../components";
+
+// SCSS | My
+// __________________________________________________
+// import './Layout.scss';
 
 const Layout = () => {
   return (
     <>
       <Header/>
+      
       <main className="container">
         <Outlet/>
       </main>

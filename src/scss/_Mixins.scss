@@ -5,25 +5,25 @@
 // Media queries 
 // __________________________________________________
 @mixin media-xl {
-  @media screen and (max-width: breackpoint-get(xl)) {
+  @media screen and (max-width: breakpoint-get(xl)) {
     @content;
   }
 }
 
 @mixin media-ld {
-  @media screen and (max-width: breackpoint-get(ld)) {
+  @media screen and (max-width: breakpoint-get(ld)) {
     @content;
   }
 }
 
 @mixin media-md {
-  @media screen and (max-width: breackpoint-get(md)) {
+  @media screen and (max-width: breakpoint-get(md)) {
     @content;
   }
 }
 
 @mixin media-sm {
-  @media screen and (max-width: breackpoint-get(sm)) {
+  @media screen and (max-width: breakpoint-get(sm)) {
     @content;
   }
 }

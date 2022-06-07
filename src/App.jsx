@@ -1,11 +1,15 @@
+// Imports | React router
+// __________________________________________________
+import { Route, Routes } from 'react-router-dom';
+
 // CSS | My
 // __________________________________________________
-import Buttons from './components/ui/Buttons/Buttons.ui';
 import './styles/App.scss';
-import Header from './components/Header/Header';
+
+// Imports | Pages, Layout
+// __________________________________________________
+import { HomePage } from './pages';
 import Layout from './layout/Layout';
-import { Route, Routes } from 'react-router-dom';
-import HomePage from './pages/Home.page';
 
 const App = () => {
 
