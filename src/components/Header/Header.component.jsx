@@ -5,11 +5,30 @@ import {NavLink} from 'react-router-dom';
 // Imports | Remix icons
 // __________________________________________________
 import UserLineIcon from 'remixicon-react/UserLineIcon';
+import Dropdown from '../ui/Dropdown/Dropdown.ui';
 
 // SCSS | My
 // __________________________________________________
 import './Header.component.scss';
 
+const options = {
+  profile: {
+    label: 'Профиль',
+    type: 'link',
+    url: 'profile',
+  },
+  sp1: 'separator',
+  settings: {
+    label: 'Настройки',
+    type: 'link',
+    url: 'settings',
+  },
+  healp: {
+    label: 'Помощь',
+    type: 'link',
+    url: 'help',
+  }
+};
 
 const Header = () => {
   return (
@@ -26,9 +45,12 @@ const Header = () => {
           </ul>
         </nav>
 
-        <button className='ml-1'>
-          <UserLineIcon/>
-        </button>
+
+        <Dropdown
+          className='ml-1'
+          controllerContent={ <UserLineIcon /> }
+          options={ options }
+        />
       
       </div>
     </header>  
